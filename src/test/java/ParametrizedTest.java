@@ -49,7 +49,7 @@ public class ParametrizedTest {
         );
     }
         @MethodSource("dataProvider")
-        @ParameterizedTest (name = "В поисковой выдаче по запросу {0} должены отображаться результаты содержащие {1}")
+        @ParameterizedTest (name = "В поисковой выдаче по запросу {0} должены отображаться результатыs содержащие {1}")
         public void SearchResultsShouldContainExpectedNames(String testData, String expectedText) {
             $(".presearch__input").setValue(testData).pressEnter();
             sleep(3000);
